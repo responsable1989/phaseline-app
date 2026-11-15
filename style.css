@@ -1,0 +1,27 @@
+/* Phaseline – öffentliche Seiten (Datenschutz). Farben aus mobile/src/theme/tokens.ts, Schriften lokal (SIL OFL), keine externen Anfragen. */
+@font-face { font-family: 'Barlow Condensed'; font-weight: 700; src: url(fonts/BarlowCondensed_700Bold.ttf) format('truetype'); font-display: swap; }
+@font-face { font-family: 'Manrope'; font-weight: 400; src: url(fonts/Manrope_400Regular.ttf) format('truetype'); font-display: swap; }
+@font-face { font-family: 'Manrope'; font-weight: 700; src: url(fonts/Manrope_700Bold.ttf) format('truetype'); font-display: swap; }
+:root { --bg: #0d1011; --surface: #161a1c; --line: #2a3034; --text: #edf1ec; --muted: #8d969a; --lime: #c8f03c; }
+* { box-sizing: border-box; }
+html { -webkit-text-size-adjust: 100%; }
+body { margin: 0; background: var(--bg); color: var(--text); font: 400 16px/1.6 Manrope, system-ui, sans-serif; }
+main { max-width: 720px; margin: 0 auto; padding: 28px 16px 64px; }
+header { display: flex; align-items: center; justify-content: space-between; gap: 12px; margin-bottom: 28px; }
+.brand { display: flex; align-items: center; gap: 8px; font: 700 30px/1 'Barlow Condensed', sans-serif; text-transform: uppercase; letter-spacing: 1px; color: var(--text); text-decoration: none; }
+.brand b { font-weight: 700; }
+.brand span { color: var(--lime); }
+.brand svg { width: 30px; height: 30px; }
+.lang { color: var(--muted); font-weight: 700; font-size: 14px; text-decoration: none; border: 1px solid var(--line); border-radius: 999px; padding: 6px 12px; }
+.lang:hover, .lang:focus { color: var(--text); border-color: var(--muted); }
+h1 { font: 700 clamp(32px, 9vw, 44px)/1 'Barlow Condensed', sans-serif; overflow-wrap: break-word; hyphens: auto; text-transform: uppercase; margin: 0 0 8px; }
+.stand { color: var(--muted); margin: 0 0 24px; }
+.line { height: 5px; width: 120px; border-radius: 3px; background: var(--lime); margin: 0 0 28px; }
+.summary { background: var(--surface); border: 1px solid var(--line); border-left: 4px solid var(--lime); border-radius: 16px; padding: 16px 18px; margin: 0 0 32px; }
+h2 { font: 700 26px/1.1 'Barlow Condensed', sans-serif; text-transform: uppercase; margin: 36px 0 10px; }
+h3 { font-size: 16px; margin: 20px 0 6px; }
+p, li { color: var(--text); }
+.muted { color: var(--muted); }
+ul { padding-left: 20px; }
+a { color: var(--lime); }
+footer { margin-top: 48px; padding-top: 16px; border-top: 1px solid var(--line); color: var(--muted); font-size: 14px; }
